@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out my unity project.
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Run EditMode and PlayMode Test
-        uses: game-ci/unity-test-runner@v2
+        uses: game-ci/unity-test-runner@v3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
